@@ -53,29 +53,36 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-document.getElementById('buttonFour').addEventListener('click', function() {
-  var celsiusInput = document.getElementById('celsiusInput').value;
-  var fahrenheitInput = document.getElementById('fahrenheitInput').value;
-  var temperatureResultElement = document.getElementById('temperatureResult');
+document.addEventListener('DOMContentLoaded', function() {
+  // Ditt befintliga JavaScript-kod här
 
-  // Convert input values to numbers
-  var celsius = parseFloat(celsiusInput);
-  var fahrenheit = parseFloat(fahrenheitInput);
+  // Eventlyssnare för att konvertera °C till °F
+  document.getElementById('buttonCelsiusToFahrenheit').addEventListener('click', function() {
+    var celsiusInput = document.getElementById('celsiusInput').value;
+    var temperatureResultElement = document.getElementById('celsiusToFahrenheit');
 
-  // Check if input values are valid
-  if (isNaN(celsius) && isNaN(fahrenheit)) {
-      temperatureResultElement.textContent = 'Ange giltiga värden för °C eller °F.';
-  } else if (!isNaN(celsius)) {
-      // Convert Celsius to Fahrenheit
+    var celsius = parseFloat(celsiusInput);
+
+    if (isNaN(celsius)) {
+      temperatureResultElement.textContent = 'Ange ett giltigt värde för °C.';
+    } else {
       var convertedFahrenheit = (celsius * 9/5) + 32;
-
-      // Display the result
       temperatureResultElement.textContent = celsius + ' °C motsvarar ' + convertedFahrenheit.toFixed(2) + ' °F.';
-  } else {
-      // Convert Fahrenheit to Celsius
-      var convertedCelsius = (fahrenheit - 32) * 5/9;
+    }
+  });
 
-      // Display the result
+  // Eventlyssnare för att konvertera °F till °C
+  document.getElementById('buttonFahrenheitToCelsius').addEventListener('click', function() {
+    var fahrenheitInput = document.getElementById('fahrenheitInput').value;
+    var temperatureResultElement = document.getElementById('farenheitToCelsius');
+
+    var fahrenheit = parseFloat(fahrenheitInput);
+
+    if (isNaN(fahrenheit)) {
+      temperatureResultElement.textContent = 'Ange ett giltigt värde för °F.';
+    } else {
+      var convertedCelsius = (fahrenheit - 32) * 5/9;
       temperatureResultElement.textContent = fahrenheit + ' °F motsvarar ' + convertedCelsius.toFixed(2) + ' °C.';
-  }
+    }
+  });
 });
