@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', function() {
       temperatureResultElement.textContent = 'Ange ett giltigt värde för °C.';
     } else {
       var convertedFahrenheit = (celsius * 9/5) + 32;
-      temperatureResultElement.textContent = celsius + ' °C motsvarar ' + convertedFahrenheit.toFixed(2) + ' °F.';
+      temperatureResultElement.textContent = celsius + '°C motsvarar ' + convertedFahrenheit.toFixed(2) + '°F.';
     }
   });
 
@@ -82,7 +82,7 @@ document.addEventListener('DOMContentLoaded', function() {
       temperatureResultElement.textContent = 'Ange ett giltigt värde för °F.';
     } else {
       var convertedCelsius = (fahrenheit - 32) * 5/9;
-      temperatureResultElement.textContent = fahrenheit + ' °F motsvarar ' + convertedCelsius.toFixed(2) + ' °C.';
+      temperatureResultElement.textContent = fahrenheit + '°F motsvarar ' + convertedCelsius.toFixed(2) + '°C.';
     }
   });
 });

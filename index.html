@@ -10,19 +10,30 @@
     <link href="https://fonts.googleapis.com/css2?family=Inria+Sans&family=Lekton&family=Nosifer&family=Quicksand:wght@500&family=Vast+Shadow&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
+    <header id="top">
         <h1>WebPulse: <br> Pulsen av dynamiska lösningar</h1>
     </header>
-    <section class="box">
+    <div class="menu-container"></div>
+    <ul>
+        <li><a class="menu" href="#top">Toppen</a></li>
+        <li><a class="menu" href="#changeButton">Ändra knapp</a></li>
+        <li><a class="menu" href="#changeAll">Ändra allt</a></li>
+        <li><a class="menu" href="#bmi">BMI</a></li>
+        <li><a class="menu" href="#calcF">°C</a></li>
+        <li><a class="menu" href="#calcC">°F</a></li>
+        <li><a class="menu" href="#bottom">Botten</a></li>
+    </ul>
+    <section class="box" id="changeButton">
         <h2>Ändra knappens färg</h2>
         <button class="button" id="buttonOne">Klicka</button>
     </section>
-    <section class="box">
+    <section class="box" id="changeAll">
         <h2>Ändra hela sidans färg</h2>
         <button class="button" id="buttonTwo">Klicka</button>
     </section>
     <section>
-        <section class="ruta">
+        <h2>Ha koll på din hälsa</h2>
+        <section class="ruta" id="bmi">
             <h2>Räkna ut BMI</h2>
             <label for="weight">Vikt:</label>
             <input id="weightInput" type="text"><br>
@@ -33,14 +44,15 @@
         </section>
     </section>
     <section>
-        <section class="ruta">
+        <h2>Beräkningar av temperaturer</h2>
+        <section class="ruta" id="calcF">
             <h2>Omvandla °C till °F</h2>
             <label for="C">°C:</label>
             <input id="celsiusInput" type="text"><br>
             <p id="celsiusToFahrenheit"></p>
             <button class="inRuta" id="buttonCelsiusToFahrenheit">Beräkna</button>
         </section>
-        <section class="ruta">
+        <section class="ruta"id="calcC">
             <h2>Omvandla °F till °C</h2>
             <label for="F">°F:</label>
             <input id="fahrenheitInput" type="text" >
@@ -48,8 +60,8 @@
             <button class="inRuta" id="buttonFahrenheitToCelsius">Beräkna</button>
         </section>
     </section>
-    <footer>
-        Webbplats designad av Karin Ekenberg
+    <footer id="bottom">
+        Webbplats designad av <a href="http://www.karinwebdesigner.com" target="_blank">Karin Ekenberg</a> 
     </footer>
     <script src="script.js"></script>
 </body>
