@@ -23,7 +23,8 @@
         <li><a class="menu" href="#calcC">°F</a></li>
         <li><a class="menu" href="#bottom">Botten</a></li>
     </ul>
-    <section class="box" id="changeButton">
+    <h2 id="changeButton">Ändra färgerna</h2>
+    <section class="box">
         <h2>Ändra knappens färg</h2>
         <button class="button" id="buttonOne">Klicka</button>
     </section>
@@ -32,29 +33,29 @@
         <button class="button" id="buttonTwo">Klicka</button>
     </section>
     <section>
-        <h2>Ha koll på din hälsa</h2>
-        <section class="ruta" id="bmi">
+        <h2 id="bmi">Ha koll på din hälsa</h2>
+        <section class="ruta">
             <h2>Räkna ut BMI</h2>
-            <label for="weight">Vikt:</label>
+            <label for="weightInput">Vikt:</label>
             <input id="weightInput" type="text"><br>
-            <label for="height">Längd:</label>
+            <label for="heightInput">Längd:</label>
             <input id="heightInput" type="text">
             <p id="result"></p>
             <button class="inRuta" id="buttonThree">Beräkna</button>
         </section>
     </section>
     <section>
-        <h2>Beräkningar av temperaturer</h2>
-        <section class="ruta" id="calcF">
+        <h2 id="calcF">Beräkningar av temperaturer</h2>
+        <section class="ruta">
             <h2>Omvandla °C till °F</h2>
-            <label for="C">°C:</label>
+            <label for="celsiusInput">°C:</label>
             <input id="celsiusInput" type="text"><br>
             <p id="celsiusToFahrenheit"></p>
             <button class="inRuta" id="buttonCelsiusToFahrenheit">Beräkna</button>
         </section>
-        <section class="ruta"id="calcC">
+        <section class="ruta" id="calcC">
             <h2>Omvandla °F till °C</h2>
-            <label for="F">°F:</label>
+            <label for="fahrenheitInput">°F:</label>
             <input id="fahrenheitInput" type="text" >
             <p id="farenheitToCelsius"></p>
             <button class="inRuta" id="buttonFahrenheitToCelsius">Beräkna</button>

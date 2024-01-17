@@ -150,6 +150,11 @@ ul {
     width: 100%;
   } 
 
+  h2 {
+    text-align: center;
+    color: var(--light-pink);
+    margin-top: 20%;
+  }
 
 
 .gradient-active-whole-site {
@@ -230,8 +235,6 @@ ul {
 
     h2 {
         font-size: 2.5em;
-        text-align: center;
-        color: var(--light-pink);
     }
 
     label {
