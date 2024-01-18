@@ -10,12 +10,16 @@
     --pink: #F806CC;
     --light-pink: #f0b4e5;
     --bar-width: 60px;
-    --bar-height: 8px;
-    --hamburger-gap: 6px;
-    --hamburger-margin: 8px;
+    --bar-height: 9px;
+    --hamburger-gap: 7px;
+    --hamburger-margin: 9px;
     --animation-timing: 200ms ease-in-out;
     --hamburger-height: calc(var(--bar-height) * 3
      + var(--hamburger-gap) * 2);
+}
+
+.hamburger-text{
+    font-size: 1.5em;
 }
 * {
     padding: 0;
@@ -89,7 +93,7 @@ button {
 }
 .button {
     margin-left: 50%;
-    margin-top: 20%;
+    margin-top: 30%;
     z-index: -1;
 }
 input[type="text"] {
@@ -190,9 +194,10 @@ h1 {
     background-color: var(--purple);
     color: var(--light-pink);
     width: 10rem;
-    min-height: 100vh;
-    padding: 0.5rem 1 rem;
-    top: 6.5vh;
+    height: 100vh;
+    padding: 0.5 rem 1 rem;
+    top: 0;
+    left: 0;
     z-index: 1;
     position: fixed;
 }
@@ -281,7 +286,7 @@ h1 {
         padding-left: 5rem;
    }
     h2 {
-        font-size: 2.5em;
+        font-size: 2em;
    }
     label {
         font-size: 1.5em;
@@ -350,7 +355,6 @@ display: block;
    }
     h2 {
         margin-top: 1%;
-        font-size: 2em;
    }
     header {
         margin-bottom: 5%;
